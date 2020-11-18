@@ -15,22 +15,18 @@ cd /home/mila/Annif-corpora/getdump/TIBKAT_BK_de/tsv/
 for xml in *.xml ; do
 
 	trans=${xml%.xml}.trans
+    tsv=${trans%.trans}.tsv
 
     xmlstarlet sel -N marcxml="http://www.loc.gov/MARC21/slim" -t -v '//marcxml:subfield[@code="2"][text()="bk"]/following-sibling::marcxml:subfield[@code="a"]' -nl "$xml" >> "$trans"
 
     sed -i -e 's/^/\<http:\/\/uri.gbv.de\/terminology\/bk\//' "$trans"
 	sed -i -e 's/\(.*\)[0-9]/&> /' "$trans"
 
+    awk 'FNR==NR{ urls[$1]=$0 } FNR!=NR { print $2"\t"urls[$1] }' /home/mila/Annif-corpora/vocab/bk.tsv $trans > $xml
+
+    sed -e 's/^[ \t]*//' $xml >> $tsv
+
     rm $xml
-
-done
-
-for trans in *.trans ; do
-
-    tsv=${trans%.trans}.tsv
-
-    awk 'FNR==NR{ urls[$1]=$2 } FNR!=NR { print $1"\t"urls[$1] }' /home/mila/Annif-corpora/vocab/bk.tsv $trans >> $tsv
-
     rm $trans
 
 done
