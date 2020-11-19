@@ -7,6 +7,7 @@
 #
 #   ./getdump.sh 
 #
+
 #baseurl="https://www.tib.eu/oai/public/repository/open?verb=ListRecords&metadataPrefix=marc_xml&set=collection~tibkat_solr~+classification:bk\:*+language:de"
 
 baseurl="https://www.tib.eu/oai/public/repository/open?verb=ListRecords&metadataPrefix=marc_xml&set=collection~tibkat_solr~+language:de+xmlPath:subject/@type=gnd"
@@ -19,10 +20,10 @@ function token {
     xmlstarlet sel -N xmlns="http://www.openarchives.org/OAI/2.0/" -t -v '//_:OAI-PMH/_:ListRecords/_:resumptionToken[text()]' -nl $file
 }
 
-i=0
-#i=58
+#i=0
 
 token="___"
+
 while [ -n "$token" ]; do
     echo -n "$i "
     file="oai-`printf %08d $i`.xml"
