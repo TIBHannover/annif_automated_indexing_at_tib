@@ -1,0 +1,347 @@
+[
+{
+"op": "core/column-addition-by-fetching-urls",
+"engineConfig": {
+"facets": [],
+"mode": "row-based"
+},
+"baseColumnName": "Column 1",
+"urlExpression": "grel:value",
+"onError": "store-error",
+"newColumnName": "descendants",
+"columnInsertIndex": 1,
+"delay": 5000,
+"cacheResponses": true,
+"httpHeadersJson": [
+{
+"name": "authorization",
+"value": ""
+},
+{
+"name": "user-agent",
+"value": "OpenRefine 3.4.1 [437dc4d]"
+},
+{
+"name": "accept",
+"value": "*/*"
+}
+],
+"description": "Create column descendants at index 1 by fetching URLs based on column Column 1 using expression grel:value"
+},
+{
+"op": "core/column-addition",
+"engineConfig": {
+"facets": [],
+"mode": "row-based"
+},
+"baseColumnName": "descendants",
+"expression": "grel:value.replace(\"},\\n {\" , \"},|\\n{\")",
+"onError": "store-error",
+"newColumnName": "Trennzeichen-ergänzt",
+"columnInsertIndex": 2,
+"description": "Create column Trennzeichen-ergänzt at index 2 based on column descendants using expression grel:value.replace(\"},\\n {\" , \"},|\\n{\")"
+},
+{
+"op": "core/multivalued-cell-split",
+"columnName": "Trennzeichen-ergänzt",
+"keyColumnName": "Column 1",
+"mode": "separator",
+"separator": "|",
+"regex": false,
+"description": "Split multi-valued cells in column Trennzeichen-ergänzt"
+},
+{
+"op": "core/column-addition",
+"engineConfig": {
+"facets": [],
+"mode": "row-based"
+},
+"baseColumnName": "Trennzeichen-ergänzt",
+"expression": "grel:value.parseJson()[\"uri\"]",
+"onError": "store-error",
+"newColumnName": "descendant-uri",
+"columnInsertIndex": 3,
+"description": "Create column descendant-uri at index 3 based on column Trennzeichen-ergänzt using expression grel:value.parseJson()[\"uri\"]"
+},
+{
+"op": "core/column-removal",
+"columnName": "descendants",
+"description": "Remove column descendants"
+},
+{
+"op": "core/column-removal",
+"columnName": "Trennzeichen-ergänzt",
+"description": "Remove column Trennzeichen-ergänzt"
+},
+{
+"op": "core/column-addition",
+"engineConfig": {
+"facets": [
+{
+"type": "list",
+"name": "Column 1",
+"expression": "value",
+"columnName": "Column 1",
+"invert": true,
+"omitBlank": false,
+"omitError": false,
+"selection": [],
+"selectBlank": true,
+"selectError": false
+}
+],
+"mode": "row-based"
+},
+"baseColumnName": "Column 1",
+"expression": "grel:value.replace(\"http://api.dante.gbv.de/descendants?uri=\", \"\")",
+"onError": "store-error",
+"newColumnName": "api-link-erstzen",
+"columnInsertIndex": 1,
+"description": "Create column api-link-erstzen at index 1 based on column Column 1 using expression grel:value.replace(\"http://api.dante.gbv.de/descendants?uri=\", \"\")"
+},
+{
+"op": "core/column-addition",
+"engineConfig": {
+"facets": [],
+"mode": "row-based"
+},
+"baseColumnName": "api-link-erstzen",
+"expression": "join ([cells['api-link-erstzen'].value,cells['Column 2'].value],'|')",
+"onError": "keep-original",
+"newColumnName": "uris",
+"columnInsertIndex": 2,
+"description": "Create column uris at index 2 based on column api-link-erstzen using expression join ([cells['api-link-erstzen'].value,cells['Column 2'].value],'|')"
+},
+{
+"op": "core/column-removal",
+"columnName": "api-link-erstzen",
+"description": "Remove column api-link-erstzen"
+},
+{
+"op": "core/column-removal",
+"columnName": "Column 2",
+"description": "Remove column Column 2"
+},
+{
+"op": "core/column-addition",
+"engineConfig": {
+"facets": [],
+"mode": "row-based"
+},
+"baseColumnName": "uris",
+"expression": "join ([cells['uris'].value,cells['descendant-uri'].value],'|')",
+"onError": "keep-original",
+"newColumnName": "uris2",
+"columnInsertIndex": 2,
+"description": "Create column uris2 at index 2 based on column uris using expression join ([cells['uris'].value,cells['descendant-uri'].value],'|')"
+},
+{
+"op": "core/column-removal",
+"columnName": "uris",
+"description": "Remove column uris"
+},
+{
+"op": "core/column-removal",
+"columnName": "descendant-uri",
+"description": "Remove column descendant-uri"
+},
+{
+"op": "core/column-rename",
+"oldColumnName": "uris2",
+"newColumnName": "uris",
+"description": "Rename column uris2 to uris"
+},
+{
+"op": "core/multivalued-cell-split",
+"columnName": "uris",
+"keyColumnName": "Column 1",
+"mode": "separator",
+"separator": "|",
+"regex": false,
+"description": "Split multi-valued cells in column uris"
+},
+{
+"op": "core/column-rename",
+"oldColumnName": "Column 1",
+"newColumnName": "descendants(API)",
+"description": "Rename column Column 1 to descendants(API)"
+},
+{
+"op": "core/column-addition",
+"engineConfig": {
+"facets": [],
+"mode": "row-based"
+},
+"baseColumnName": "uris",
+"expression": "grel:value+\"?format=ntriples\"",
+"onError": "set-to-blank",
+"newColumnName": "ntriples-Link",
+"columnInsertIndex": 2,
+"description": "Create column ntriples-Link at index 2 based on column uris using expression grel:value+\"?format=ntriples\""
+},
+{
+"op": "core/column-removal",
+"columnName": "uris",
+"description": "Remove column uris"
+},
+{
+"op": "core/column-removal",
+"columnName": "descendants(API)",
+"description": "Remove column descendants(API)"
+},
+{
+"op": "core/column-addition-by-fetching-urls",
+"engineConfig": {
+"facets": [],
+"mode": "row-based"
+},
+"baseColumnName": "ntriples-Link",
+"urlExpression": "grel:value",
+"onError": "store-error",
+"newColumnName": "NTriples",
+"columnInsertIndex": 1,
+"delay": 5000,
+"cacheResponses": true,
+"httpHeadersJson": [
+{
+"name": "authorization",
+"value": ""
+},
+{
+"name": "user-agent",
+"value": "OpenRefine 3.4.1 [437dc4d]"
+},
+{
+"name": "accept",
+"value": "*/*"
+}
+],
+"description": "Create column NTriples at index 1 by fetching URLs based on column ntriples-Link using expression grel:value"
+},
+{
+"op": "core/column-removal",
+"columnName": "ntriples-Link",
+"description": "Remove column ntriples-Link"
+},
+{
+"op": "core/column-addition",
+"engineConfig": {
+"facets": [],
+"mode": "row-based"
+},
+"baseColumnName": "NTriples",
+"expression": "grel:value.replace(\"> .\", \"> .|\")",
+"onError": "set-to-blank",
+"newColumnName": "NTriples-separiert",
+"columnInsertIndex": 1,
+"description": "Create column NTriples-separiert at index 1 based on column NTriples using expression grel:value.replace(\"> .\", \"> .|\")"
+},
+{
+"op": "core/multivalued-cell-split",
+"columnName": "NTriples-separiert",
+"keyColumnName": "NTriples",
+"mode": "separator",
+"separator": "|",
+"regex": false,
+"description": "Split multi-valued cells in column NTriples-separiert"
+},
+{
+"op": "core/column-removal",
+"columnName": "NTriples",
+"description": "Remove column NTriples"
+},
+{
+"op": "core/column-addition",
+"engineConfig": {
+"facets": [],
+"mode": "row-based"
+},
+"baseColumnName": "NTriples-separiert",
+"expression": "grel:value.replace(\"@en .\", \"@en .|\")",
+"onError": "store-error",
+"newColumnName": "NTriples-separiert2",
+"columnInsertIndex": 1,
+"description": "Create column NTriples-separiert2 at index 1 based on column NTriples-separiert using expression grel:value.replace(\"@en .\", \"@en .|\")"
+},
+{
+"op": "core/multivalued-cell-split",
+"columnName": "NTriples-separiert2",
+"keyColumnName": "NTriples-separiert",
+"mode": "separator",
+"separator": "|",
+"regex": false,
+"description": "Split multi-valued cells in column NTriples-separiert2"
+},
+{
+"op": "core/column-removal",
+"columnName": "NTriples-separiert",
+"description": "Remove column NTriples-separiert"
+},
+{
+"op": "core/column-addition",
+"engineConfig": {
+"facets": [],
+"mode": "row-based"
+},
+"baseColumnName": "NTriples-separiert2",
+"expression": "grel:value.replace(\"@de .\", \"@de .|\")",
+"onError": "store-error",
+"newColumnName": "NTriples-separiert3",
+"columnInsertIndex": 1,
+"description": "Create column NTriples-separiert3 at index 1 based on column NTriples-separiert2 using expression grel:value.replace(\"@de .\", \"@de .|\")"
+},
+{
+"op": "core/multivalued-cell-split",
+"columnName": "NTriples-separiert3",
+"keyColumnName": "NTriples-separiert2",
+"mode": "separator",
+"separator": "|",
+"regex": false,
+"description": "Split multi-valued cells in column NTriples-separiert3"
+},
+{
+"op": "core/column-removal",
+"columnName": "NTriples-separiert2",
+"description": "Remove column NTriples-separiert2"
+},
+{
+"op": "core/column-addition",
+"engineConfig": {
+"facets": [],
+"mode": "row-based"
+},
+"baseColumnName": "NTriples-separiert3",
+"expression": "grel:value.replace(\"genid1 .\", \"genid1 .|\")",
+"onError": "store-error",
+"newColumnName": "NTriples-separiert4",
+"columnInsertIndex": 1,
+"description": "Create column NTriples-separiert4 at index 1 based on column NTriples-separiert3 using expression grel:value.replace(\"genid1 .\", \"genid1 .|\")"
+},
+{
+"op": "core/multivalued-cell-split",
+"columnName": "NTriples-separiert4",
+"keyColumnName": "NTriples-separiert3",
+"mode": "separator",
+"separator": "|",
+"regex": false,
+"description": "Split multi-valued cells in column NTriples-separiert4"
+},
+{
+"op": "core/column-removal",
+"columnName": "NTriples-separiert3",
+"description": "Remove column NTriples-separiert3"
+},
+{
+"op": "core/text-transform",
+"engineConfig": {
+"facets": [],
+"mode": "row-based"
+},
+"columnName": "NTriples-separiert4",
+"expression": "value.trim()",
+"onError": "keep-original",
+"repeat": false,
+"repeatCount": 10,
+"description": "Text transform on cells in column NTriples-separiert4 using expression value.trim()"
+}
+]

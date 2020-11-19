@@ -7,8 +7,9 @@
 #
 #   ./getdump.sh 
 #
-baseurl="https://www.tib.eu/oai/public/repository/open?verb=ListRecords&metadataPrefix=marc_xml&set=collection~tibkat_solr~+classification:bk\:*+language:de"
-#baseurl="https://www.tib.eu/oai/public/repository/open?verb=ListRecords&metadataPrefix=marc_xml&set=collection~tibkat_solr~+classification:bk\:*+language:de&resumptionToken=KixudWxsLDkyNjAwLDkzNjU5OSxjb2xsZWN0aW9ufnRpYmthdF9zb2xyfiBjbGFzc2lmaWNhdGlvbjpia1w6KiBsYW5ndWFnZTpkZSxtYXJjX3htbCxBb0lxTWpBeU1DMHhNQzB4TWpCVVNVSkxRVlE2TURJMU56VTVNalE0"
+#baseurl="https://www.tib.eu/oai/public/repository/open?verb=ListRecords&metadataPrefix=marc_xml&set=collection~tibkat_solr~+classification:bk\:*+language:de"
+
+baseurl="https://www.tib.eu/oai/public/repository/open?verb=ListRecords&metadataPrefix=marc_xml&set=collection~tibkat_solr~+language:de+xmlPath:subject/@type=gnd"
 
 set -e
 
