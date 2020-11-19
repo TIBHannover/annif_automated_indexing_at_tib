@@ -13,7 +13,7 @@ baseurl="https://www.tib.eu/oai/public/repository/open?verb=ListRecords&metadata
 
 set -e
 
-cd /home/mila/Annif-corpora/getdump/TIBKAT_BK_de/
+cd /home/mila/Annif-corpora/getdump/TIBKAT_GND_de/dump/
 
 function token {
     xmlstarlet sel -N xmlns="http://www.openarchives.org/OAI/2.0/" -t -v '//_:OAI-PMH/_:ListRecords/_:resumptionToken[text()]' -nl $file
