@@ -4,7 +4,7 @@
 # moves them into another directory and renames them according 
 # to their collection and its identifier.
 #
-# ./split_dump.sh 
+# ./split_dump_MARCXML.sh 
 # To be executed in the directory where the respective xml files are kept. There needs to be another directory ../xml.
 
 for xml_file in *.xml ; do
