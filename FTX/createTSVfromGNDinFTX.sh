@@ -2,7 +2,7 @@
 
 # Extract the GND indexing information and write it into a corresponding tsv file
 
-cd /home/mila/Annif-corpora/collections/TIBKAT_abstracts_GND_de/xml/
+cd /home/mila/Annif-corpora/collections/TIBKAT_abstracts_GND_en/xml/
 
 for xml in *.xml ; do
 	
@@ -14,7 +14,7 @@ for xml in *.xml ; do
 
 done
 
-cd /home/mila/Annif-corpora/collections/TIBKAT_abstracts_GND_de/tsv/
+cd /home/mila/Annif-corpora/collections/TIBKAT_abstracts_GND_en/tsv/
 
 for tsv in *.tsv ; do
 	sed -i -e 's/^/\<https:\/\/d-nb.info\/gnd\//' "$tsv"
