@@ -3,17 +3,17 @@
 annif_project="TIBKAT_abstracts_GND_de_OP"
 
 #Load vocabulary BK
-echo "Start loading vocabulary BK"
-annif loadvoc $annif_project vocab/bk.tsv
-echo "Vocabulary BK loaded"
+echo "Start loading vocabulary GND"
+annif loadvoc $annif_project vocab/GND_vocab-pref-var.tsv
+echo "Vocabulary GND loaded"
  
 #Train loaded vocabulary
 echo "Start training of FTX"
-annif train $annif_project training/TIBIndex/TIBKAT_BK_de_202011/
-echo "Vocabulary BK trained"
+annif train $annif_project training/TIBIndex/TIBKAT_abstracts_GND_de_202011/
+echo "Vocabulary GND trained"
  
 #Evaluate against gold standard
-annif eval $annif_project goldstandard/TIBIndex/TIBKAT_BK_de_202011/
+annif eval $annif_project goldstandard/TIBIndex/TIBKAT_abstracts_GND_de_202011/
 
 #Run Web GUI
 echo "Start Web GUI"

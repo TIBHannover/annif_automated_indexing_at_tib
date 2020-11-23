@@ -8,7 +8,7 @@ while read p; do
         data_set_txt=${data_set%.xml}.txt
         data_set_tsv=${data_set%.xml}.tsv
 
-        cp /home/mila/Annif-corpora/getdump/TIBKAT_BK_de/txt/$data_set_txt /home/mila/Annif-corpora/goldstandard/TIBIndex/TIBKAT_BK_de_202011/.
-        cp /home/mila/Annif-corpora/getdump/TIBKAT_BK_de/tsv/$data_set_tsv /home/mila/Annif-corpora/goldstandard/TIBIndex/TIBKAT_BK_de_202011/.
+        cp /home/mila/Annif-corpora/collections/TIBKAT_abstracts_GND_de/txt/$data_set_txt /home/mila/Annif-corpora/goldstandard/TIBIndex/TIBKAT_abstracts_GND_de_202011/.
+        cp /home/mila/Annif-corpora/collections/TIBKAT_abstracts_GND_de/tsv/$data_set_tsv /home/mila/Annif-corpora/goldstandard/TIBIndex/TIBKAT_abstracts_GND_de_202011/.
 
 done <Goldstandard_TIBKAT_BK_de_20201117.csv
