@@ -13,8 +13,9 @@ annif train $annif_project training/TIBIndex/TIBKAT_BK_de_202011/
 echo "Vocabulary BK trained"
  
 #Evaluate against gold standard
-annif eval $annif_project goldstandard/TIBIndex/TIBKAT_BK_de_202011/
+touch $annif_project.txt
+annif eval -r $annif_project.txt $annif_project goldstandard/TIBIndex/TIBKAT_BK_de_202011/
 
 #Run Web GUI
-echo "Start Web GUI"
-annif run
+#echo "Start Web GUI"
+#annif run
