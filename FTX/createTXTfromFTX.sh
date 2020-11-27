@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/mila/Annif-corpora/collections/TIBKAT_abstracts_GND_en/xml/
+cd /home/mila/Annif-corpora/collections/TIBKAT_LokSys_de/xml/
 
 for f in *.xml ; do
 
