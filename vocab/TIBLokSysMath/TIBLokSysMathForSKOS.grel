@@ -1,0 +1,174 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Column",
+    "expression": "grel:if(value!=null, \"skos:narrower\", \"\")",
+    "onError": "store-error",
+    "newColumnName": "narrower",
+    "columnInsertIndex": 2,
+    "description": "Create column narrower at index 2 based on column Column using expression grel:if(value!=null, \"skos:narrower\", \"\")"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Link",
+    "description": "Remove column Link"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Anzahl Bücher",
+    "description": "Remove column Anzahl Bücher"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Systemstelle",
+    "expression": "grel:value.replace(\" \", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Systemstelle using expression grel:value.replace(\" \", \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Column",
+    "expression": "grel:value.replace(\" \", \"\").replace(\".\", \"_\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Column using expression grel:value.replace(\" \", \"\").replace(\".\", \"_\")"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Column",
+    "expression": "grel:\"<http://uricorn.fly/tib_lok_sys#\"+value+\">\"",
+    "onError": "store-error",
+    "newColumnName": "uri_narrower",
+    "columnInsertIndex": 2,
+    "description": "Create column uri_narrower at index 2 based on column Column using expression grel:\"<http://uricorn.fly/tib_lok_sys#\"+value+\">\""
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Systemstelle",
+    "expression": "grel:\"<http://uricorn.fly/tib_lok_sys#\"+value+\">\"",
+    "onError": "store-error",
+    "newColumnName": "broader",
+    "columnInsertIndex": 1,
+    "description": "Create column broader at index 1 based on column Systemstelle using expression grel:\"<http://uricorn.fly/tib_lok_sys#\"+value+\">\""
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "uri_narrower",
+    "expression": "grel:if(value==null, cells['broader'].value, value)",
+    "onError": "store-error",
+    "newColumnName": "all_uris",
+    "columnInsertIndex": 4,
+    "description": "Create column all_uris at index 4 based on column uri_narrower using expression grel:if(value==null, cells['broader'].value, value)"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "broader",
+    "expression": "grel:value+\" \"+ cells['narrower'].value+\" \"+cells['uri_narrower'].value+\" .\"",
+    "onError": "store-error",
+    "newColumnName": "?s skos:narrower ?y",
+    "columnInsertIndex": 1,
+    "description": "Create column ?s skos:narrower ?y at index 1 based on column broader using expression grel:value+\" \"+ cells['narrower'].value+\" \"+cells['uri_narrower'].value+\" .\""
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "all_uris",
+    "expression": "grel:value+\" a skos:Concept .\"",
+    "onError": "store-error",
+    "newColumnName": "?s a skos:Concept .",
+    "columnInsertIndex": 1,
+    "description": "Create column ?s a skos:Concept . at index 1 based on column all_uris using expression grel:value+\" a skos:Concept .\""
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "all_uris",
+    "expression": "grel:value+\" skos:prefLabel\"+\" \\\"\"+cells['Beschreibung'].value+\"\\\"@de .\"",
+    "onError": "store-error",
+    "newColumnName": "?s skos:prefLabel ?label",
+    "columnInsertIndex": 1,
+    "description": "Create column ?s skos:prefLabel ?label at index 1 based on column all_uris using expression grel:value+\" skos:prefLabel\"+\" \\\"\"+cells['Beschreibung'].value+\"\\\"@de .\""
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Systemstelle",
+    "description": "Remove column Systemstelle"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "broader",
+    "description": "Remove column broader"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column",
+    "description": "Remove column Column"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "uri_narrower",
+    "description": "Remove column uri_narrower"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "all_uris",
+    "description": "Remove column all_uris"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "narrower",
+    "description": "Remove column narrower"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Beschreibung",
+    "description": "Remove column Beschreibung"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Hier",
+    "description": "Remove column Hier"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Verweis auf",
+    "description": "Remove column Verweis auf"
+  }
+]
