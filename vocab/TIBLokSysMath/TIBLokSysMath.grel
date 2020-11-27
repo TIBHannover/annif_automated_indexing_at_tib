@@ -1,0 +1,102 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "Link",
+    "description": "Remove column Link"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Anzahl Bücher",
+    "description": "Remove column Anzahl Bücher"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Systemstelle",
+    "expression": "grel:value.replace(\" \", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Systemstelle using expression grel:value.replace(\" \", \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Column",
+    "expression": "grel:value.replace(\" \", \"\").replace(\".\", \"_\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Column using expression grel:value.replace(\" \", \"\").replace(\".\", \"_\")"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Column",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "LokSysMath",
+    "columnInsertIndex": 2,
+    "description": "Create column LokSysMath at index 2 based on column Column using expression grel:value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LokSysMath",
+    "expression": "grel:if(value==null, cells[\"Systemstelle\"].value, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column LokSysMath using expression grel:if(value==null, cells[\"Systemstelle\"].value, value)"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "LokSysMath",
+    "expression": "grel:\"<\"+\"http://uricorn.fly/tib_lok_sys#\"+value+\">\"",
+    "onError": "set-to-blank",
+    "newColumnName": "URI",
+    "columnInsertIndex": 3,
+    "description": "Create column URI at index 3 based on column LokSysMath using expression grel:\"<\"+\"http://uricorn.fly/tib_lok_sys#\"+value+\">\""
+  }
+  {
+    "op": "core/column-removal",
+    "columnName": "Systemstelle",
+    "description": "Remove column Systemstelle"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column",
+    "description": "Remove column Column"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "LokSysMath",
+    "description": "Remove column LokSysMath"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Hier",
+    "description": "Remove column Hier"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Verweis auf",
+    "description": "Remove column Verweis auf"
+  }
+]

@@ -1,0 +1,93 @@
+URI	Beschreibung
+<http://uricorn.fly/tib_lok_sys#mat1>	Allgemeines
+<http://uricorn.fly/tib_lok_sys#mat1_4>	Didaktik der Mathematik. Programmierter und rechnergestützter Mathematikunterricht
+<http://uricorn.fly/tib_lok_sys#mat1_5>	Beruf. Ausbildung. Nachwuchs
+<http://uricorn.fly/tib_lok_sys#mat3>	Unterhaltungsmathematik (Rätsel, Spiele, u. a.)
+<http://uricorn.fly/tib_lok_sys#mat5>	Geschichte der Mathematik
+<http://uricorn.fly/tib_lok_sys#mat8>	Biographien. Gesammelte Werke
+<http://uricorn.fly/tib_lok_sys#mat10>	Mathematische Logik
+<http://uricorn.fly/tib_lok_sys#mat23>	Berechenbarkeit. Rekursivität
+<http://uricorn.fly/tib_lok_sys#mat40>	Mengenlehre
+<http://uricorn.fly/tib_lok_sys#mat45>	Zahlentheorie
+<http://uricorn.fly/tib_lok_sys#mat50>	Analytische Zahlentheorie
+<http://uricorn.fly/tib_lok_sys#mat65>	Algebraische Zahlentheorie
+<http://uricorn.fly/tib_lok_sys#mat70>	Algebra
+<http://uricorn.fly/tib_lok_sys#mat71>	Lineare Algebra
+<http://uricorn.fly/tib_lok_sys#mat85>	Algebraische Geometrie. Algebraische Mannigfaltigkeiten. Algebraische Räume. Algebraische Funktionenkörper
+<http://uricorn.fly/tib_lok_sys#mat90>	Ringe. Algebren
+<http://uricorn.fly/tib_lok_sys#mat94>	Kommutative Ringe und Algebren
+<http://uricorn.fly/tib_lok_sys#mat105>	Gruppentheorie
+<http://uricorn.fly/tib_lok_sys#mat106>	Endliche Gruppen. Gruppen mit Endlichkeitsbedingungen
+<http://uricorn.fly/tib_lok_sys#mat119>	Topologische Gruppen
+<http://uricorn.fly/tib_lok_sys#mat119_6>	Lie-Gruppen. Möbius- und Klein-Gruppen. Topologische Transformationsgruppen
+<http://uricorn.fly/tib_lok_sys#mat124>	Gruppendarstellungen und -charaktere
+<http://uricorn.fly/tib_lok_sys#mat130>	Verbände und ihre Darstellungen
+<http://uricorn.fly/tib_lok_sys#mat133>	Boole'sche Verbände, Algebren und Ringe
+<http://uricorn.fly/tib_lok_sys#mat135>	Kategorien. Funktoren
+<http://uricorn.fly/tib_lok_sys#mat137>	Algebraische Strukturen und Systeme
+<http://uricorn.fly/tib_lok_sys#mat140>	Analysis
+<http://uricorn.fly/tib_lok_sys#mat146>	Ungleichungen
+<http://uricorn.fly/tib_lok_sys#mat150>	Differential- und Integralrechnung
+<http://uricorn.fly/tib_lok_sys#mat157>	Maßtheorie
+<http://uricorn.fly/tib_lok_sys#mat162>	Integrationstheorie
+<http://uricorn.fly/tib_lok_sys#mat174>	Konvexe Funktionen. Konvexe Analysis
+<http://uricorn.fly/tib_lok_sys#mat190>	Theorie der Funktionen komplexer Veränderlicher
+<http://uricorn.fly/tib_lok_sys#mat233>	Funktionentheorie mehrere komplexer Variabler
+<http://uricorn.fly/tib_lok_sys#mat243>	Potentialtheorie
+<http://uricorn.fly/tib_lok_sys#mat255>	Reihen und Folgen
+<http://uricorn.fly/tib_lok_sys#mat267>	Fourier-Reihen. Orthogonalreihen, -polynome, -systeme. Entwicklung nach Eigenfunktionen. Jacobi-Reihen
+<http://uricorn.fly/tib_lok_sys#mat280>	Approximationstheorie. Asymptotische Analysis
+<http://uricorn.fly/tib_lok_sys#mat298>	Elliptische Funktionen und Integrale. Abelsche Funktionen. Weierstraßsche Funktionen. Jacobische elliptische Funktionen
+<http://uricorn.fly/tib_lok_sys#mat325>	Differentialgleichungen. Randwertaufgaben
+<http://uricorn.fly/tib_lok_sys#mat330>	Gewöhnliche Differentialgleichungen
+<http://uricorn.fly/tib_lok_sys#mat339>	Dynamische (autonome) Systeme
+<http://uricorn.fly/tib_lok_sys#mat340>	Stochastische gewöhnliche Differentialgleichungen
+<http://uricorn.fly/tib_lok_sys#mat365>	Partielle Differentialgleichungen
+<http://uricorn.fly/tib_lok_sys#mat380>	Lineare und quasilineare partielle Differentialgleichungen
+<http://uricorn.fly/tib_lok_sys#mat395>	Integralgleichungen
+<http://uricorn.fly/tib_lok_sys#mat402>	Lineare Integralgleichungen
+<http://uricorn.fly/tib_lok_sys#mat411>	Differenzengleichungen
+<http://uricorn.fly/tib_lok_sys#mat413>	Funktionalgleichungen
+<http://uricorn.fly/tib_lok_sys#mat429>	Variationsrechnung
+<http://uricorn.fly/tib_lok_sys#mat430>	Funktionaltransformationen. Operatorenrechnung
+<http://uricorn.fly/tib_lok_sys#mat433>	Laplace-Transformation und ihre Faltungen
+<http://uricorn.fly/tib_lok_sys#mat434>	Fourier-Transformation und ihre Faltungen
+<http://uricorn.fly/tib_lok_sys#mat445>	Funktionalanalysis
+<http://uricorn.fly/tib_lok_sys#mat448>	Operatoren und Gleichungen. Fixpunkttheorie
+<http://uricorn.fly/tib_lok_sys#mat451>	Topologische Vektorräume. Lineare topologische Räume
+<http://uricorn.fly/tib_lok_sys#mat454>	Verallgemeinerte Funktionen (Distributionen). Lineare Funktionale
+<http://uricorn.fly/tib_lok_sys#mat468>	Lineare metrische und normierte Räume. Banach-Räume
+<http://uricorn.fly/tib_lok_sys#mat470>	Hilbert-Raum. Operatoren im Hilbert-Raum
+<http://uricorn.fly/tib_lok_sys#mat473>	Nichtlineare Funktionalanalysis
+<http://uricorn.fly/tib_lok_sys#mat481>	Topologie
+<http://uricorn.fly/tib_lok_sys#mat500>	Algebraische Topologie
+<http://uricorn.fly/tib_lok_sys#mat521>	Knotentheorie
+<http://uricorn.fly/tib_lok_sys#mat525>	Graphentheorie
+<http://uricorn.fly/tib_lok_sys#mat530>	Kombinatorik
+<http://uricorn.fly/tib_lok_sys#mat535>	Geometrie
+<http://uricorn.fly/tib_lok_sys#mat549>	Darstellende Geometrie
+<http://uricorn.fly/tib_lok_sys#mat555>	Analytische Geometrie. Euklidische Geometrie
+<http://uricorn.fly/tib_lok_sys#mat570>	Differentialgeometrie
+<http://uricorn.fly/tib_lok_sys#mat571>	Vektoren. Tensoren. Spinoren
+<http://uricorn.fly/tib_lok_sys#mat571_1>	Vektoralgebra und -analysis
+<http://uricorn.fly/tib_lok_sys#mat571_2>	Tensoralgebra und -analysis
+<http://uricorn.fly/tib_lok_sys#mat592>	Riemannsche Geometrie. Riemannsche Bäume. Riemannsche Mannigfaltigkeiten.
+<http://uricorn.fly/tib_lok_sys#mat645>	Wahrscheinlichkeitstheorie und mathematische Statistik
+<http://uricorn.fly/tib_lok_sys#mat646>	Wahrscheinlichkeitstheorie
+<http://uricorn.fly/tib_lok_sys#mat655>	Stochastische Prozesse. Stochastische Analysis.
+<http://uricorn.fly/tib_lok_sys#mat660>	Mathematische Statistik
+<http://uricorn.fly/tib_lok_sys#mat679>	Multivariate Methoden
+<http://uricorn.fly/tib_lok_sys#mat680>	Korrelations- und Regressionstheorie
+<http://uricorn.fly/tib_lok_sys#mat686>	Zeitreihen. Multimomentverfahren.
+<http://uricorn.fly/tib_lok_sys#mat690>	Angewandte Mathematik
+<http://uricorn.fly/tib_lok_sys#mat691>	Numerische Mathematik
+<http://uricorn.fly/tib_lok_sys#mat698>	Finite Verfahren. Differenzenverfahren.
+<http://uricorn.fly/tib_lok_sys#mat730>	Kybernetik. Theorie allgemeiner Systeme.
+<http://uricorn.fly/tib_lok_sys#mat845>	Mathematische Operations Research
+<http://uricorn.fly/tib_lok_sys#mat847>	Versicherungsmathematik. Risikotheorie.
+<http://uricorn.fly/tib_lok_sys#mat848>	Finanz- und Wirtschaftsrechnen
+<http://uricorn.fly/tib_lok_sys#mat850>	Optmierung
+<http://uricorn.fly/tib_lok_sys#mat851>	Lineare Optimierung
+<http://uricorn.fly/tib_lok_sys#mat852>	Nichtlineare Optimierung
+<http://uricorn.fly/tib_lok_sys#mat855>	Spieltheorie
+<http://uricorn.fly/tib_lok_sys#mat885>	Mathematische Tafeln und Formelsammlungen
