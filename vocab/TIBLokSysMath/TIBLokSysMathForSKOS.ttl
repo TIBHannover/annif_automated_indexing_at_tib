@@ -1,0 +1,284 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://uricorn.fly/tib_lok_sy> .
+@prefix math: <http://uricorn.fly/tib_lok_sy#> .
+
+
+math: a owl:Ontology ; owl:imports skos: .
+
+
+<http://uricorn.fly/tib_lok_sys#mat1> skos:prefLabel "Allgemeines"@de .
+<http://uricorn.fly/tib_lok_sys#mat1> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat1_4> skos:prefLabel "Didaktik der Mathematik. Programmierter und rechnergestützter Mathematikunterricht"@de .
+<http://uricorn.fly/tib_lok_sys#mat1_4> a skos:Concept .
+<http://uricorn.fly/tib_lok_sys#mat1> skos:narrower <http://uricorn.fly/tib_lok_sys#mat1_4> .
+<http://uricorn.fly/tib_lok_sys#mat1_5> skos:prefLabel "Beruf. Ausbildung. Nachwuchs"@de .
+<http://uricorn.fly/tib_lok_sys#mat1_5> a skos:Concept .
+<http://uricorn.fly/tib_lok_sys#mat1> skos:narrower <http://uricorn.fly/tib_lok_sys#mat1_5> .
+<http://uricorn.fly/tib_lok_sys#mat3> skos:prefLabel "Unterhaltungsmathematik (Rätsel, Spiele, u. a.)"@de .
+<http://uricorn.fly/tib_lok_sys#mat3> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat5> skos:prefLabel "Geschichte der Mathematik"@de .
+<http://uricorn.fly/tib_lok_sys#mat5> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat8> skos:prefLabel "Biographien. Gesammelte Werke"@de .
+<http://uricorn.fly/tib_lok_sys#mat8> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat10> skos:prefLabel "Mathematische Logik"@de .
+<http://uricorn.fly/tib_lok_sys#mat10> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat23> skos:prefLabel "Berechenbarkeit. Rekursivität"@de .
+<http://uricorn.fly/tib_lok_sys#mat23> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat40> skos:prefLabel "Mengenlehre"@de .
+<http://uricorn.fly/tib_lok_sys#mat40> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat45> skos:prefLabel "Zahlentheorie"@de .
+<http://uricorn.fly/tib_lok_sys#mat45> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat50> skos:prefLabel "Analytische Zahlentheorie"@de .
+<http://uricorn.fly/tib_lok_sys#mat50> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat65> skos:prefLabel "Algebraische Zahlentheorie"@de .
+<http://uricorn.fly/tib_lok_sys#mat65> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat70> skos:prefLabel "Algebra"@de .
+<http://uricorn.fly/tib_lok_sys#mat70> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat71> skos:prefLabel "Lineare Algebra"@de .
+<http://uricorn.fly/tib_lok_sys#mat71> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat85> skos:prefLabel "Algebraische Geometrie. Algebraische Mannigfaltigkeiten. Algebraische Räume. Algebraische Funktionenkörper"@de .
+<http://uricorn.fly/tib_lok_sys#mat85> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat90> skos:prefLabel "Ringe. Algebren"@de .
+<http://uricorn.fly/tib_lok_sys#mat90> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat94> skos:prefLabel "Kommutative Ringe und Algebren"@de .
+<http://uricorn.fly/tib_lok_sys#mat94> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat105> skos:prefLabel "Gruppentheorie"@de .
+<http://uricorn.fly/tib_lok_sys#mat105> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat106> skos:prefLabel "Endliche Gruppen. Gruppen mit Endlichkeitsbedingungen"@de .
+<http://uricorn.fly/tib_lok_sys#mat106> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat119> skos:prefLabel "Topologische Gruppen"@de .
+<http://uricorn.fly/tib_lok_sys#mat119> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat119_6> skos:prefLabel "Lie-Gruppen. Möbius- und Klein-Gruppen. Topologische Transformationsgruppen"@de .
+<http://uricorn.fly/tib_lok_sys#mat119_6> a skos:Concept .
+<http://uricorn.fly/tib_lok_sys#mat119> skos:narrower <http://uricorn.fly/tib_lok_sys#mat119_6> .
+<http://uricorn.fly/tib_lok_sys#mat124> skos:prefLabel "Gruppendarstellungen und -charaktere"@de .
+<http://uricorn.fly/tib_lok_sys#mat124> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat130> skos:prefLabel "Verbände und ihre Darstellungen"@de .
+<http://uricorn.fly/tib_lok_sys#mat130> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat133> skos:prefLabel "Boole'sche Verbände, Algebren und Ringe"@de .
+<http://uricorn.fly/tib_lok_sys#mat133> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat135> skos:prefLabel "Kategorien. Funktoren"@de .
+<http://uricorn.fly/tib_lok_sys#mat135> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat137> skos:prefLabel "Algebraische Strukturen und Systeme"@de .
+<http://uricorn.fly/tib_lok_sys#mat137> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat140> skos:prefLabel "Analysis"@de .
+<http://uricorn.fly/tib_lok_sys#mat140> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat146> skos:prefLabel "Ungleichungen"@de .
+<http://uricorn.fly/tib_lok_sys#mat146> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat150> skos:prefLabel "Differential- und Integralrechnung"@de .
+<http://uricorn.fly/tib_lok_sys#mat150> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat157> skos:prefLabel "Maßtheorie"@de .
+<http://uricorn.fly/tib_lok_sys#mat157> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat162> skos:prefLabel "Integrationstheorie"@de .
+<http://uricorn.fly/tib_lok_sys#mat162> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat174> skos:prefLabel "Konvexe Funktionen. Konvexe Analysis"@de .
+<http://uricorn.fly/tib_lok_sys#mat174> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat190> skos:prefLabel "Theorie der Funktionen komplexer Veränderlicher"@de .
+<http://uricorn.fly/tib_lok_sys#mat190> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat233> skos:prefLabel "Funktionentheorie mehrere komplexer Variabler"@de .
+<http://uricorn.fly/tib_lok_sys#mat233> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat243> skos:prefLabel "Potentialtheorie"@de .
+<http://uricorn.fly/tib_lok_sys#mat243> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat255> skos:prefLabel "Reihen und Folgen"@de .
+<http://uricorn.fly/tib_lok_sys#mat255> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat267> skos:prefLabel "Fourier-Reihen. Orthogonalreihen, -polynome, -systeme. Entwicklung nach Eigenfunktionen. Jacobi-Reihen"@de .
+<http://uricorn.fly/tib_lok_sys#mat267> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat280> skos:prefLabel "Approximationstheorie. Asymptotische Analysis"@de .
+<http://uricorn.fly/tib_lok_sys#mat280> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat298> skos:prefLabel "Elliptische Funktionen und Integrale. Abelsche Funktionen. Weierstraßsche Funktionen. Jacobische elliptische Funktionen"@de .
+<http://uricorn.fly/tib_lok_sys#mat298> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat325> skos:prefLabel "Differentialgleichungen. Randwertaufgaben"@de .
+<http://uricorn.fly/tib_lok_sys#mat325> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat330> skos:prefLabel "Gewöhnliche Differentialgleichungen"@de .
+<http://uricorn.fly/tib_lok_sys#mat330> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat339> skos:prefLabel "Dynamische (autonome) Systeme"@de .
+<http://uricorn.fly/tib_lok_sys#mat339> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat340> skos:prefLabel "Stochastische gewöhnliche Differentialgleichungen"@de .
+<http://uricorn.fly/tib_lok_sys#mat340> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat365> skos:prefLabel "Partielle Differentialgleichungen"@de .
+<http://uricorn.fly/tib_lok_sys#mat365> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat380> skos:prefLabel "Lineare und quasilineare partielle Differentialgleichungen"@de .
+<http://uricorn.fly/tib_lok_sys#mat380> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat395> skos:prefLabel "Integralgleichungen"@de .
+<http://uricorn.fly/tib_lok_sys#mat395> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat402> skos:prefLabel "Lineare Integralgleichungen"@de .
+<http://uricorn.fly/tib_lok_sys#mat402> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat411> skos:prefLabel "Differenzengleichungen"@de .
+<http://uricorn.fly/tib_lok_sys#mat411> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat413> skos:prefLabel "Funktionalgleichungen"@de .
+<http://uricorn.fly/tib_lok_sys#mat413> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat429> skos:prefLabel "Variationsrechnung"@de .
+<http://uricorn.fly/tib_lok_sys#mat429> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat430> skos:prefLabel "Funktionaltransformationen. Operatorenrechnung"@de .
+<http://uricorn.fly/tib_lok_sys#mat430> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat433> skos:prefLabel "Laplace-Transformation und ihre Faltungen"@de .
+<http://uricorn.fly/tib_lok_sys#mat433> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat434> skos:prefLabel "Fourier-Transformation und ihre Faltungen"@de .
+<http://uricorn.fly/tib_lok_sys#mat434> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat445> skos:prefLabel "Funktionalanalysis"@de .
+<http://uricorn.fly/tib_lok_sys#mat445> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat448> skos:prefLabel "Operatoren und Gleichungen. Fixpunkttheorie"@de .
+<http://uricorn.fly/tib_lok_sys#mat448> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat451> skos:prefLabel "Topologische Vektorräume. Lineare topologische Räume"@de .
+<http://uricorn.fly/tib_lok_sys#mat451> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat454> skos:prefLabel "Verallgemeinerte Funktionen (Distributionen). Lineare Funktionale"@de .
+<http://uricorn.fly/tib_lok_sys#mat454> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat468> skos:prefLabel "Lineare metrische und normierte Räume. Banach-Räume"@de .
+<http://uricorn.fly/tib_lok_sys#mat468> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat470> skos:prefLabel "Hilbert-Raum. Operatoren im Hilbert-Raum"@de .
+<http://uricorn.fly/tib_lok_sys#mat470> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat473> skos:prefLabel "Nichtlineare Funktionalanalysis"@de .
+<http://uricorn.fly/tib_lok_sys#mat473> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat481> skos:prefLabel "Topologie"@de .
+<http://uricorn.fly/tib_lok_sys#mat481> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat500> skos:prefLabel "Algebraische Topologie"@de .
+<http://uricorn.fly/tib_lok_sys#mat500> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat521> skos:prefLabel "Knotentheorie"@de .
+<http://uricorn.fly/tib_lok_sys#mat521> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat525> skos:prefLabel "Graphentheorie"@de .
+<http://uricorn.fly/tib_lok_sys#mat525> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat530> skos:prefLabel "Kombinatorik"@de .
+<http://uricorn.fly/tib_lok_sys#mat530> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat535> skos:prefLabel "Geometrie"@de .
+<http://uricorn.fly/tib_lok_sys#mat535> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat549> skos:prefLabel "Darstellende Geometrie"@de .
+<http://uricorn.fly/tib_lok_sys#mat549> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat555> skos:prefLabel "Analytische Geometrie. Euklidische Geometrie"@de .
+<http://uricorn.fly/tib_lok_sys#mat555> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat570> skos:prefLabel "Differentialgeometrie"@de .
+<http://uricorn.fly/tib_lok_sys#mat570> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat571> skos:prefLabel "Vektoren. Tensoren. Spinoren"@de .
+<http://uricorn.fly/tib_lok_sys#mat571> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat571_1> skos:prefLabel "Vektoralgebra und -analysis"@de .
+<http://uricorn.fly/tib_lok_sys#mat571_1> a skos:Concept .
+<http://uricorn.fly/tib_lok_sys#mat571> skos:narrower <http://uricorn.fly/tib_lok_sys#mat571_1> .
+<http://uricorn.fly/tib_lok_sys#mat571_2> skos:prefLabel "Tensoralgebra und -analysis"@de .
+<http://uricorn.fly/tib_lok_sys#mat571_2> a skos:Concept .
+<http://uricorn.fly/tib_lok_sys#mat571> skos:narrower <http://uricorn.fly/tib_lok_sys#mat571_2> .
+<http://uricorn.fly/tib_lok_sys#mat592> skos:prefLabel "Riemannsche Geometrie. Riemannsche Bäume. Riemannsche Mannigfaltigkeiten."@de .
+<http://uricorn.fly/tib_lok_sys#mat592> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat645> skos:prefLabel "Wahrscheinlichkeitstheorie und mathematische Statistik"@de .
+<http://uricorn.fly/tib_lok_sys#mat645> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat646> skos:prefLabel "Wahrscheinlichkeitstheorie"@de .
+<http://uricorn.fly/tib_lok_sys#mat646> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat655> skos:prefLabel "Stochastische Prozesse. Stochastische Analysis."@de .
+<http://uricorn.fly/tib_lok_sys#mat655> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat660> skos:prefLabel "Mathematische Statistik"@de .
+<http://uricorn.fly/tib_lok_sys#mat660> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat679> skos:prefLabel "Multivariate Methoden"@de .
+<http://uricorn.fly/tib_lok_sys#mat679> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat680> skos:prefLabel "Korrelations- und Regressionstheorie"@de .
+<http://uricorn.fly/tib_lok_sys#mat680> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat686> skos:prefLabel "Zeitreihen. Multimomentverfahren."@de .
+<http://uricorn.fly/tib_lok_sys#mat686> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat690> skos:prefLabel "Angewandte Mathematik"@de .
+<http://uricorn.fly/tib_lok_sys#mat690> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat691> skos:prefLabel "Numerische Mathematik"@de .
+<http://uricorn.fly/tib_lok_sys#mat691> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat698> skos:prefLabel "Finite Verfahren. Differenzenverfahren."@de .
+<http://uricorn.fly/tib_lok_sys#mat698> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat730> skos:prefLabel "Kybernetik. Theorie allgemeiner Systeme."@de .
+<http://uricorn.fly/tib_lok_sys#mat730> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat845> skos:prefLabel "Mathematische Operations Research"@de .
+<http://uricorn.fly/tib_lok_sys#mat845> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat847> skos:prefLabel "Versicherungsmathematik. Risikotheorie."@de .
+<http://uricorn.fly/tib_lok_sys#mat847> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat848> skos:prefLabel "Finanz- und Wirtschaftsrechnen"@de .
+<http://uricorn.fly/tib_lok_sys#mat848> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat850> skos:prefLabel "Optmierung"@de .
+<http://uricorn.fly/tib_lok_sys#mat850> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat851> skos:prefLabel "Lineare Optimierung"@de .
+<http://uricorn.fly/tib_lok_sys#mat851> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat852> skos:prefLabel "Nichtlineare Optimierung"@de .
+<http://uricorn.fly/tib_lok_sys#mat852> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat855> skos:prefLabel "Spieltheorie"@de .
+<http://uricorn.fly/tib_lok_sys#mat855> a skos:Concept .
+
+<http://uricorn.fly/tib_lok_sys#mat885> skos:prefLabel "Mathematische Tafeln und Formelsammlungen"@de .
+<http://uricorn.fly/tib_lok_sys#mat885> a skos:Concept .
+
