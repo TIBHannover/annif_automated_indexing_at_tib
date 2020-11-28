@@ -1,0 +1,15 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Column 1",
+    "expression": "grel:value.toLowercase().replace(\":\",\"\") + \".xml\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Column 1 using expression grel:value.toLowercase().replace(\":\",\"\") + \".xml\""
+  }
+]
