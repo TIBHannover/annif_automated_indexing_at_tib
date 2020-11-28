@@ -36,7 +36,7 @@ for xml in *.xml ; do
     # Remove every character until 'mat' begins
     sed -i -e 's/^.*\(mat.*\).*$/\1/' $xml
 
-    # Remove the blank between mat and number
+    # Remove the blank between 'mat' and number
     sed -i -e 's/ //g' $xml
 
     # Replace the dot in subcategories with an underscore
