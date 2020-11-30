@@ -1,0 +1,166 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 1",
+    "description": "Remove column Column 1"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 4",
+    "description": "Remove column Column 4"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 2",
+    "description": "Remove column Column 2"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 6",
+    "description": "Remove column Column 6"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 7",
+    "description": "Remove column Column 7"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 8",
+    "description": "Remove column Column 8"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 9",
+    "description": "Remove column Column 9"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 10",
+    "description": "Remove column Column 10"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 11",
+    "description": "Remove column Column 11"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 12",
+    "description": "Remove column Column 12"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 13",
+    "description": "Remove column Column 13"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 14",
+    "description": "Remove column Column 14"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 15",
+    "description": "Remove column Column 15"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 16",
+    "description": "Remove column Column 16"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 17",
+    "description": "Remove column Column 17"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 18",
+    "description": "Remove column Column 18"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 19",
+    "description": "Remove column Column 19"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 20",
+    "description": "Remove column Column 20"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 21",
+    "description": "Remove column Column 21"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 22",
+    "description": "Remove column Column 22"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 23",
+    "description": "Remove column Column 23"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 24",
+    "description": "Remove column Column 24"
+  },
+  {
+    "op": "core/blank-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Column 3",
+    "description": "Blank down cells in column Column 3"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Column 3",
+          "expression": "value",
+          "columnName": "Column 3",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "Column 5",
+    "index": 0,
+    "description": "Move column Column 5 to position 0"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "Column 5",
+    "expression": "grel:\"<\" + \"http://uricorn.fly/linsearch#\" + value + \">\"",
+    "onError": "set-to-blank",
+    "newColumnName": "URI",
+    "columnInsertIndex": 1,
+    "description": "Create column URI at index 1 based on column Column 5 using expression grel:\"<\" + \"http://uricorn.fly/linsearch#\" + value + \">\""
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 5",
+    "description": "Remove column Column 5"
+  }
+]
