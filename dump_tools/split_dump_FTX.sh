@@ -7,27 +7,45 @@
 # ./split_dump_FTX.sh 
 # To be executed in the directory where the respective xml files are kept. There needs to be another directory ../xml.
 
-for xml_file in *.xml ; do
+echo "Split files"
 
-    xml_split -l 2 -n 7 -e .trans $xml_file
+for xml in *.xml ; do
+
+    xml_split -l 2 -n 7 -e .trans $xml
 
 done
+
+echo "Remove artefacts"
 
 find . -type f -name 'oai-[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]-0000000.trans' | xargs rm
 
-for trans_file in *.trans ; do
-    mv $trans_file ../xml
-done 
+# i=0
 
-cd ../xml
+# echo "Move to appropriate folder"
 
-for trans_file in *.trans; do
-    newFileName=$(xmlstarlet sel -t -v '//document/@id' -nl $trans_file)
+# for trans_file in *.trans ; do
 
-    newFileName=$(echo "$newFileName" | tr '[:upper:]' '[:lower:]')
+#     mv $trans_file ../xml
+
+#     if ! ((i % 1000)); then
+#         echo "$i th loop"
+#     fi
+
+#     i=$[i+1]
+
+# done 
+
+# cd ../xml
+
+# echo "Rename files"
+
+# for trans_file in *.trans; do
+#     newFileName=$(xmlstarlet sel -t -v '//document/@id' -nl $trans_file)
+
+#     newFileName=$(echo "$newFileName" | tr '[:upper:]' '[:lower:]')
     
-    newFileName=$(echo "$newFileName" | tr -d :)
+#     newFileName=$(echo "$newFileName" | tr -d :)
   
-    newFileName="${newFileName}.xml"
-    mv $trans_file $newFileName
-done
+#     newFileName="${newFileName}.xml"
+#     mv $trans_file $newFileName
+# done

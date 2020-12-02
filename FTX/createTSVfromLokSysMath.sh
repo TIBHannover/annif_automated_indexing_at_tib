@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Extract the BK indexing information and write it into a corresponding tsv file
+# Extract the local systematic indexing information and write it into a corresponding tsv file
 
 cd /home/mila/Annif-corpora/collections/TIBKAT_LokSys_de/xml/
 
