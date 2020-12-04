@@ -2,7 +2,6 @@
 #
 # Extract the LinSearch indexing information and write it into a corresponding tsv file
 
-#cd /home/mila/Annif-corpora/collections/TIBKAT_LinSearch_de/xml/
 cd /home/mila/Annif-corpora/collections/TIBKAT_LinSearch_de/xml/
 
 for f in *.xml ; do

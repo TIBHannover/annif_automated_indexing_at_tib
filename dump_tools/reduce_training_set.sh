@@ -2,7 +2,7 @@
 
 cd /home/mila/Annif-corpora/collections/TIBKAT_LinSearch_de/xml/
 
-ls /home/mila/Annif-corpora/collections/TIBKAT_LinSearch_de/xml/ / |sort -R |tail -200000 |while read file; do
+ls /home/mila/Annif-corpora/collections/TIBKAT_LinSearch_de/xml/ / |sort -R |tail -150000 |while read file; do
     
     rm /home/mila/Annif-corpora/collections/TIBKAT_LinSearch_de/xml/$file
 
