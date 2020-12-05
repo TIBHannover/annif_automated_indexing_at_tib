@@ -1,13 +1,13 @@
 #!/bin/bash
 
-cd /home/mila/Annif-corpora/collections/TIBKAT_LokSys_de/tsv/
+cd /home/mila/Annif-corpora/collections/TIBKAT_LinSearch_de/tsv/
 
 for f in *.tsv ; do
-	cp $f /home/mila/Annif-corpora/training/TIBIndex/TIBKAT_LokSysMath_de/.
+	cp $f /home/mila/Annif-corpora/training/TIBKAT_LinSearch_de/.
 done
 
-cd /home/mila/Annif-corpora/collections/TIBKAT_LokSys_de/txt/
+cd /home/mila/Annif-corpora/collections/TIBKAT_LinSearch_de/txt/
 
 for f in *.txt ; do
-	cp $f /home/mila/Annif-corpora/training/TIBIndex/TIBKAT_LokSysMath_de/.
+	cp $f /home/mila/Annif-corpora/training/TIBKAT_LinSearch_de/.
 done

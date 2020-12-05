@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /home/mila/Annif-corpora/training/TIBKAT_LinSearch_de/
+cd /home/mila/Annif-corpora/goldstandard/TIBKAT_LinSearch_de/
 
 N=$(ls /home/mila/Annif-corpora/collections/TIBKAT_LinSearch_de/xml/ | wc -l)
 
