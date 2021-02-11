@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /home/mila/Annif-corpora/testset/TIBKAT_LinSearch_de/
+cd /home/mila/Annif-corpora/testset/TIBKAT_LinSearch_Mapping_de/
 
 N=$(ls /home/mila/Annif-corpora/collections/TIBKAT_LinSearch_de/xml/ | wc -l)
 
