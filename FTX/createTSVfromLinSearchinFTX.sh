@@ -26,6 +26,8 @@ for xml in *.xml ; do
 
     sed -i 's/^[ \t]*//' $tsv
 
+    echo "$xml converted"
+
     rm $xml
     rm $trans
 done
