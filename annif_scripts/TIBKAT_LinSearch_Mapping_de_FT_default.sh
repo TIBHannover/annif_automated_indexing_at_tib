@@ -1,6 +1,6 @@
 #!/bin/bash
  
-annif_project="TIBKAT_LinSearch_de_FT"
+annif_project="TIBKAT_LinSearch_de_Mapping_FT-default"
 
 #Load vocabulary GND
 echo "Start loading LinSearch classification"
@@ -9,9 +9,9 @@ echo "LinSearch classification loaded"
  
 #Train loaded vocabulary
 echo "Start training"
-annif train $annif_project training/TIBKAT_LinSearch_de/
+annif train $annif_project training/TIBKAT_LinSearch_Mapping_de/
 echo "Trained"
 
 #Evaluate against gold standard
 touch $annif_project.txt
-annif eval -r $annif_project.txt $annif_project goldstandard/TIBKAT_LinSearch_de/
+annif eval -r $annif_project.txt $annif_project goldstandard/TIBKAT_LinSearch_Mapping_de/
