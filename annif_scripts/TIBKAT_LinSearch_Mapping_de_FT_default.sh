@@ -1,6 +1,6 @@
 #!/bin/bash
  
-annif_project="TIBKAT_LinSearch_de_Mapping_FT-default"
+annif_project="TIBKAT_LinSearch_Mapping_de_FT_default"
 
 #Load vocabulary GND
 echo "Start loading LinSearch classification"
