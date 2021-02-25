@@ -1,6 +1,6 @@
 #!/bin/bash
  
-annif_project="TIBKAT_LinSearch_Mapping_de_vw_multi"
+annif_project="TIBKAT_LinSearch_Mapping_de_vw_multi_ect"
 
 #Load vocabulary GND
 echo "Start loading LinSearch classification"
