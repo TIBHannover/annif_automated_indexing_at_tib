@@ -13,8 +13,10 @@
 #baseurl="https://getinfo.tib.eu/oai/intern/repository/tib?verb=ListRecords&metadataPrefix=ftx&set=collection~tibkat_solr~+language:de+xmlPath:subject/@type=gnd+abstract:*"
 #baseurl="https://getinfo.tib.eu/oai/intern/repository/tib?verb=ListRecords&metadataPrefix=ftx&set=collection~tibkat_solr~+language:en+xmlPath:subject/@type=gnd+abstract:*"
 #baseurl="https://getinfo.tib.eu/oai/intern/repository/tib?verb=ListRecords&metadataPrefix=ftx&set=collection~tibkat_solr~+language:de+locationCode%3A%28L%20mat%2A%20OR%20LB%20mat%2A%29"
+#baseurl="https://getinfo.tib.eu/oai/intern/repository/tib?verb=ListRecords&metadataPrefix=ftx&set=collection~tibkat_solr~+language:de+xmlPath:classification/@classificationProcedure=mapping"
 
-baseurl="https://getinfo.tib.eu/oai/intern/repository/tib?verb=ListRecords&metadataPrefix=ftx&set=collection~tibkat_solr~+language:de+xmlPath:classification/@classificationProcedure=mapping"
+# TIBKAT; LokSys FBR; deutsch
+baseurl="https://getinfo.tib.eu/oai/intern/repository/tib?verb=ListRecords&metadataPrefix=ftx&set=collection~tibkat_solr~+language:de+xmlPath:classification/@classificationName=loksys-fbr"
 
 set -e
 
@@ -23,7 +25,7 @@ set -e
 #cd /home/mila/Annif-corpora/getdump/TIBKAT_abstracts_GND_en/dump/
 #cd /home/mila/Annif-corpora/collections/TIBKAT_LokSys_de/dump
 
-cd /home/mila/Annif-corpora/collections/TIBKAT_LinSearch_de/dump/
+cd /home/mila/Annif-corpora/collections/TIBKAT_LokSys_FBR_de/dump/
 
 function token {
     xmlstarlet sel -N xmlns="http://www.openarchives.org/OAI/2.0/" -t -v '//_:OAI-PMH/_:ListRecords/_:resumptionToken[text()]' -nl $file
