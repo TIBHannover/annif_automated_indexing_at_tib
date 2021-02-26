@@ -1,0 +1,157 @@
+@base <http://uricorn.fly/linsearch#> .
+@prefix linsearch: <http://uricorn.fly/linsearch#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+linsearch: a skos:ConceptScheme ;
+    skos:prefLabel "Fachsystematik LinSearch"@de ;
+    dct:title "Fachsystematik LinSearch"@de ;
+    dct:description "Fächer für die LinSearch-Fachzuordnung"@de .
+
+linsearch:tec a skos:Concept .
+linsearch:tec skos:notation "tec"^^xsd:string .
+linsearch:tec skos:prefLabel "Technik allgemein"@de .
+linsearch:tec skos:topConceptOf linsearch: .
+
+linsearch:fer a skos:Concept .
+linsearch:fer skos:notation "fer"^^xsd:string .
+linsearch:fer skos:prefLabel "Werkstoffkunde"@de .
+linsearch:fer skos:topConceptOf linsearch: .
+
+linsearch:mas a skos:Concept .
+linsearch:mas skos:notation "mas"^^xsd:string .
+linsearch:mas skos:prefLabel "Maschinenbau, Energietechnik"@de .
+linsearch:mas skos:topConceptOf linsearch: .
+
+linsearch:elt a skos:Concept .
+linsearch:elt skos:notation "elt"^^xsd:string .
+linsearch:elt skos:prefLabel "Elektrotechnik"@de .
+linsearch:elt skos:topConceptOf linsearch: .
+
+linsearch:ver a skos:Concept .
+linsearch:ver skos:notation "ver"^^xsd:string .
+linsearch:ver skos:prefLabel "Verkehrstechnik, Verkehrswesen"@de .
+linsearch:ver skos:topConceptOf linsearch: .
+
+linsearch:bau a skos:Concept .
+linsearch:bau skos:notation "bau"^^xsd:string .
+linsearch:bau skos:prefLabel "Bauwesen"@de .
+linsearch:bau skos:topConceptOf linsearch: .
+
+linsearch:ber a skos:Concept .
+linsearch:ber skos:notation "ber"^^xsd:string .
+linsearch:ber skos:prefLabel "Bergbau"@de .
+linsearch:ber skos:topConceptOf linsearch: .
+
+linsearch:cet a skos:Concept .
+linsearch:cet skos:notation "cet"^^xsd:string .
+linsearch:cet skos:prefLabel "Chemische und Umwelttechnik"@de .
+linsearch:cet skos:topConceptOf linsearch: .
+
+linsearch:med a skos:Concept .
+linsearch:med skos:notation "med"^^xsd:string .
+linsearch:med skos:prefLabel "Medizintechnik"@de .
+linsearch:med skos:topConceptOf linsearch: .
+
+linsearch:meda a skos:Concept .
+linsearch:meda skos:notation "meda"^^xsd:string .
+linsearch:meda skos:prefLabel "Medizin"@de .
+linsearch:meda skos:topConceptOf linsearch: .
+
+linsearch:arc a skos:Concept .
+linsearch:arc skos:notation "arc"^^xsd:string .
+linsearch:arc skos:prefLabel "Architektur"@de .
+linsearch:arc skos:topConceptOf linsearch: .
+
+linsearch:che a skos:Concept .
+linsearch:che skos:notation "che"^^xsd:string .
+linsearch:che skos:prefLabel "Chemie"@de .
+linsearch:che skos:topConceptOf linsearch: .
+
+linsearch:inf a skos:Concept .
+linsearch:inf skos:notation "inf"^^xsd:string .
+linsearch:inf skos:prefLabel "Informatik"@de .
+linsearch:inf skos:topConceptOf linsearch: .
+
+linsearch:mat a skos:Concept .
+linsearch:mat skos:notation "mat"^^xsd:string .
+linsearch:mat skos:prefLabel "Mathematik"@de .
+linsearch:mat skos:topConceptOf linsearch: .
+
+linsearch:phy a skos:Concept .
+linsearch:phy skos:notation "phy"^^xsd:string .
+linsearch:phy skos:prefLabel "Physik"@de .
+linsearch:phy skos:topConceptOf linsearch: .
+
+linsearch:bio a skos:Concept .
+linsearch:bio skos:notation "bio"^^xsd:string .
+linsearch:bio skos:prefLabel "Biowissenschaften, Biologie"@de .
+linsearch:bio skos:topConceptOf linsearch: .
+
+linsearch:pae a skos:Concept .
+linsearch:pae skos:notation "pae"^^xsd:string .
+linsearch:pae skos:prefLabel "Erziehungswissenschaften, Fachdidaktiken"@de .
+linsearch:pae skos:topConceptOf linsearch: .
+
+linsearch:hor a skos:Concept .
+linsearch:hor skos:notation "hor"^^xsd:string .
+linsearch:hor skos:prefLabel "Gartenbau"@de .
+linsearch:hor skos:topConceptOf linsearch: .
+
+linsearch:geo a skos:Concept .
+linsearch:geo skos:notation "geo"^^xsd:string .
+linsearch:geo skos:prefLabel "Geowissenschaften, Geographie"@de .
+linsearch:geo skos:topConceptOf linsearch: .
+
+linsearch:his a skos:Concept .
+linsearch:his skos:notation "his"^^xsd:string .
+linsearch:his skos:prefLabel "Geschichte"@de .
+linsearch:his skos:topConceptOf linsearch: .
+
+linsearch:lin a skos:Concept .
+linsearch:lin skos:notation "lin"^^xsd:string .
+linsearch:lin skos:prefLabel "Sprachwissenschaften"@de .
+linsearch:lin skos:topConceptOf linsearch: .
+
+linsearch:lit a skos:Concept .
+linsearch:lit skos:notation "lit"^^xsd:string .
+linsearch:lit skos:prefLabel "Literaturwissenschaften"@de .
+linsearch:lit skos:topConceptOf linsearch: .
+
+linsearch:phi a skos:Concept .
+linsearch:phi skos:notation "phi"^^xsd:string .
+linsearch:phi skos:prefLabel "Philosophie"@de .
+linsearch:phi skos:topConceptOf linsearch: .
+
+linsearch:jur a skos:Concept .
+linsearch:jur skos:notation "jur"^^xsd:string .
+linsearch:jur skos:prefLabel "Rechtswissenschaften"@de .
+linsearch:jur skos:topConceptOf linsearch: .
+
+linsearch:rel a skos:Concept .
+linsearch:rel skos:notation "rel"^^xsd:string .
+linsearch:rel skos:prefLabel "Religionswissenschaft, Theologie"@de .
+linsearch:rel skos:topConceptOf linsearch: .
+
+linsearch:sow a skos:Concept .
+linsearch:sow skos:notation "sow"^^xsd:string .
+linsearch:sow skos:prefLabel "Sozialwissenschaften"@de .
+linsearch:sow skos:topConceptOf linsearch: .
+
+linsearch:spo a skos:Concept .
+linsearch:spo skos:notation "spo"^^xsd:string .
+linsearch:spo skos:prefLabel "Sportwissenschaft"@de .
+linsearch:spo skos:topConceptOf linsearch: .
+
+linsearch:oek a skos:Concept .
+linsearch:oek skos:notation "oek"^^xsd:string .
+linsearch:oek skos:prefLabel "Wirtschaftswissenschaften"@de .
+linsearch:oek skos:topConceptOf linsearch: .
+
+linsearch:rest a skos:Concept .
+linsearch:rest skos:notation "rest"^^xsd:string .
+linsearch:rest skos:prefLabel "Konnte nicht zugeordnet werden"@de .
+linsearch:rest skos:topConceptOf linsearch: .
+

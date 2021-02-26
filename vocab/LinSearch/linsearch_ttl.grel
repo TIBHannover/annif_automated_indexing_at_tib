@@ -1,0 +1,132 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Column 1",
+    "expression": "grel:value.replace('<http://uricorn.fly/linsearch#', '')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Column 1 using expression grel:value.replace('<http://uricorn.fly/linsearch#', '')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Column 1",
+    "expression": "grel:value.replace('>', '')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Column 1 using expression grel:value.replace('>', '')"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Column 1",
+    "expression": "grel:'linsearch:' + value",
+    "onError": "set-to-blank",
+    "newColumnName": "Namespace",
+    "columnInsertIndex": 1,
+    "description": "Create column Namespace at index 1 based on column Column 1 using expression grel:'linsearch:' + value"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Namespace",
+    "expression": "grel:value + ' a skos:Concept .\\n'",
+    "onError": "set-to-blank",
+    "newColumnName": "skos:Concept",
+    "columnInsertIndex": 2,
+    "description": "Create column skos:Concept at index 2 based on column Namespace using expression grel:value + ' a skos:Concept .\\n'"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Namespace",
+    "expression": "grel:value + ' skos:notation \"' + cells['Column 1'].value + '\"^^xsd:string .\\n'",
+    "onError": "set-to-blank",
+    "newColumnName": "skos:notation",
+    "columnInsertIndex": 2,
+    "description": "Create column skos:notation at index 2 based on column Namespace using expression grel:value + ' skos:notation \"' + cells['Column 1'].value + '\"^^xsd:string .\\n'"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "skos:notation",
+    "index": 3,
+    "description": "Move column skos:notation to position 3"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Namespace",
+    "expression": "grel:value + ' skos:prefLabel \"' + cells['Column 2'].value + '\"@de .\\n'",
+    "onError": "set-to-blank",
+    "newColumnName": "skos:prefLabel",
+    "columnInsertIndex": 2,
+    "description": "Create column skos:prefLabel at index 2 based on column Namespace using expression grel:value + ' skos:prefLabel \"' + cells['Column 2'].value + '\"@de .\\n'"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "skos:prefLabel",
+    "index": 3,
+    "description": "Move column skos:prefLabel to position 3"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "skos:prefLabel",
+    "index": 4,
+    "description": "Move column skos:prefLabel to position 4"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 2",
+    "description": "Remove column Column 2"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 1",
+    "description": "Remove column Column 1"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Namespace",
+    "expression": "grel:value + ' skos:topConceptOf linsearch: .\\n'",
+    "onError": "set-to-blank",
+    "newColumnName": "skos:topConceptOf",
+    "columnInsertIndex": 1,
+    "description": "Create column skos:topConceptOf at index 1 based on column Namespace using expression grel:value + ' skos:topConceptOf linsearch: .\\n'"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "skos:topConceptOf",
+    "index": 4,
+    "description": "Move column skos:topConceptOf to position 4"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Namespace",
+    "description": "Remove column Namespace"
+  }
+]
