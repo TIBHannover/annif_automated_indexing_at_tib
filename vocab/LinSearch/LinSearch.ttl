@@ -1,12 +1,261 @@
-@prefix : <http://www.semanticweb.org/mila/ontologies/2021/1/untitled-ontology-8#> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/mila/ontologies/2021/1/untitled-ontology-8> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix linsearch: <http://uricorn.fly/linsearch#> .
+@base <http://www.w3.org/2002/07/owl#> .
 
-<http://www.semanticweb.org/mila/ontologies/2021/1/untitled-ontology-8> rdf:type owl:Ontology ;
-                                                                         owl:imports <file:/home/mila/Annif-corpora/annif_automated_indexing_at_tib/vocab/LinSearch/LinSearch.ttl> .
+ linsearch: a skos:ConceptScheme , owl:Ontology ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> ;
+    skos:prefLabel "Fachsystematik LinSearch"@de ;
+    dct:title "Fachsystematik LinSearch"@de ;
+    dct:description "Fächer für die LinSearch-Fachzuordnung"@de .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://uricorn.fly/linsearch#
+linsearch: rdf:type owl:NamedIndividual ,
+                    skos:ConceptScheme ;
+           dct:description "Fächer für die LinSearch-Fachzuordnung"@de ;
+           dct:title "Fachsystematik LinSearch"@de ;
+           skos:prefLabel "Fachsystematik LinSearch"@de .
+
+
+###  http://uricorn.fly/linsearch#arc
+linsearch:arc rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "arc"^^xsd:string ;
+              skos:prefLabel "Architektur"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#bau
+linsearch:bau rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "bau"^^xsd:string ;
+              skos:prefLabel "Bauwesen"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#ber
+linsearch:ber rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "ber"^^xsd:string ;
+              skos:prefLabel "Bergbau"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#bio
+linsearch:bio rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "bio"^^xsd:string ;
+              skos:prefLabel "Biowissenschaften, Biologie"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#cet
+linsearch:cet rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "cet"^^xsd:string ;
+              skos:prefLabel "Chemische und Umwelttechnik"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#che
+linsearch:che rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "che"^^xsd:string ;
+              skos:prefLabel "Chemie"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#elt
+linsearch:elt rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "elt"^^xsd:string ;
+              skos:prefLabel "Elektrotechnik"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#fer
+linsearch:fer rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "fer"^^xsd:string ;
+              skos:prefLabel "Werkstoffkunde"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#geo
+linsearch:geo rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "geo"^^xsd:string ;
+              skos:prefLabel "Geowissenschaften, Geographie"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#his
+linsearch:his rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "his"^^xsd:string ;
+              skos:prefLabel "Geschichte"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#hor
+linsearch:hor rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "hor"^^xsd:string ;
+              skos:prefLabel "Gartenbau"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#inf
+linsearch:inf rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "inf"^^xsd:string ;
+              skos:prefLabel "Informatik"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#jur
+linsearch:jur rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "jur"^^xsd:string ;
+              skos:prefLabel "Rechtswissenschaften"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#lin
+linsearch:lin rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "lin"^^xsd:string ;
+              skos:prefLabel "Sprachwissenschaften"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#lit
+linsearch:lit rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "lit"^^xsd:string ;
+              skos:prefLabel "Literaturwissenschaften"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#mas
+linsearch:mas rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "mas"^^xsd:string ;
+              skos:prefLabel "Maschinenbau, Energietechnik"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#mat
+linsearch:mat rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "mat"^^xsd:string ;
+              skos:prefLabel "Mathematik"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#med
+linsearch:med rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "med"^^xsd:string ;
+              skos:prefLabel "Medizintechnik"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#meda
+linsearch:meda rdf:type owl:NamedIndividual ,
+                        skos:Concept ;
+               skos:notation "meda"^^xsd:string ;
+               skos:prefLabel "Medizin"@de ;
+               skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#oek
+linsearch:oek rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "oek"^^xsd:string ;
+              skos:prefLabel "Wirtschaftswissenschaften"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#pae
+linsearch:pae rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "pae"^^xsd:string ;
+              skos:prefLabel "Erziehungswissenschaften, Fachdidaktiken"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#phi
+linsearch:phi rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "phi"^^xsd:string ;
+              skos:prefLabel "Philosophie"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#phy
+linsearch:phy rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "phy"^^xsd:string ;
+              skos:prefLabel "Physik"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#rel
+linsearch:rel rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "rel"^^xsd:string ;
+              skos:prefLabel "Religionswissenschaft, Theologie"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#rest
+linsearch:rest rdf:type owl:NamedIndividual ,
+                        skos:Concept ;
+               skos:notation "rest"^^xsd:string ;
+               skos:prefLabel "Konnte nicht zugeordnet werden"@de ;
+               skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#sow
+linsearch:sow rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "sow"^^xsd:string ;
+              skos:prefLabel "Sozialwissenschaften"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#spo
+linsearch:spo rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "spo"^^xsd:string ;
+              skos:prefLabel "Sportwissenschaft"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#tec
+linsearch:tec rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "tec"^^xsd:string ;
+              skos:prefLabel "Technik allgemein"@de ;
+              skos:topConceptOf linsearch: .
+
+
+###  http://uricorn.fly/linsearch#ver
+linsearch:ver rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:notation "ver"^^xsd:string ;
+              skos:prefLabel "Verkehrstechnik, Verkehrswesen"@de ;
+              skos:topConceptOf linsearch: .
+
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
