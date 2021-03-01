@@ -19,10 +19,12 @@ for xml in *.xml ; do
 
     xmlstarlet sel -T -t -m "//classification[@classificationName='loksys-fbr']" -v 'code[text()]' -nl "$xml" >> "$trans"
 
-    # sed -i -e 's/^/\<http:\/\/uricorn.fly\/linsearch\#/' "$trans"
-    sed -i -e 's/$/\>/' "$trans"
+    awk -F, '{gsub(/[[:space:]]/,"-",$1)} 1' "$trans" > "$xml"
+
+    sed -i -e 's/^/\<http:\/\/uricorn.fly\/tib_lok_sys\#/' "$xml"
+    sed -i -e 's/$/\>/' "$xml"
 	
-    # awk 'FNR==NR{ urls[$1]=$0 } FNR!=NR { print $2"\t"urls[$1] }' /home/mila/Annif-corpora/vocab/LinSearch.tsv $trans > $tsv
+    awk 'FNR==NR{ urls[$1]=$0 } FNR!=NR { print $2"\t"urls[$1] }' /home/mila/Annif-corpora/vocab/TIBLokSysJur.tsv $xml > $tsv
 
     sed -i 's/^[ \t]*//' $tsv
 
