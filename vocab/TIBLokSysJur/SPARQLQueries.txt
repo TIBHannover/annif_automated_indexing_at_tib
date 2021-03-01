@@ -1,0 +1,43 @@
+# SPARQL Queries:
+
+# Get notation and classnames (with literals and language tags)
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?notation ?className
+WHERE {
+?s skos:notation ?notation .
+?s rdfs:label ?className .
+}
+
+# Get classnames without language tags
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?notation ?strippedClassName
+WHERE {
+?s skos:notation ?notation .
+?s rdfs:label ?className .
+FILTER ( LANG(?className) = "de" )
+BIND (str(?className) AS ?strippedClassName)
+}
+
+# Get notation without literals
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?strippedNotation ?strippedClassName
+WHERE {
+?s skos:notation ?notation .
+BIND( str(?notation) as ?strippedNotation )
+
+?s rdfs:label ?className .
+FILTER ( LANG(?className) = "de" )
+BIND ( str(?className) AS ?strippedClassName)
+}

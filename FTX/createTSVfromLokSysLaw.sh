@@ -17,7 +17,7 @@ for xml in *.xml ; do
     tsv=${xml%.xml}.tsv
     trans=${xml%.xml}.trans
 
-    # xmlstarlet sel -T -t -m "//classification[@classificationProcedure='mapping']" -v 'code[text()]' -nl "$xml" >> "$trans"
+    xmlstarlet sel -T -t -m "//classification[@classificationName='loksys-fbr']" -v 'code[text()]' -nl "$xml" >> "$trans"
 
     # sed -i -e 's/^/\<http:\/\/uricorn.fly\/linsearch\#/' "$trans"
     sed -i -e 's/$/\>/' "$trans"
