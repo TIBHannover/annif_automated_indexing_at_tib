@@ -1,0 +1,50 @@
+# See also: https://github.com/janeczku/calibre-web/issues/1349
+
+Start loading LinSearch classification
+updating existing vocabulary
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/shutil.py", line 566, in move
+    os.rename(src, real_dst)
+OSError: [Errno 18] Invalid cross-device link: '/tmp/tmpsjvxq4cy' -> 'data/vocabs/LinSearch/subjects.ttl'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/annif", line 33, in <module>
+    sys.exit(load_entry_point('annif', 'console_scripts', 'annif')())
+  File "/usr/local/lib/python3.7/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/flask/cli.py", line 586, in main
+    return super(FlaskGroup, self).main(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/usr/local/lib/python3.7/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/usr/local/lib/python3.7/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/usr/local/lib/python3.7/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/click/decorators.py", line 21, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/flask/cli.py", line 426, in decorator
+    return __ctx.invoke(f, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/Annif/annif/cli.py", line 185, in run_loadvoc
+    proj.vocab.load_vocabulary(subjects, proj.language)
+  File "/Annif/annif/vocab.py", line 68, in load_vocabulary
+    language)
+  File "/Annif/annif/corpus/subject.py", line 32, in save_skos
+    serialize_subjects_to_skos(self.subjects, language, path)
+  File "/Annif/annif/corpus/skos.py", line 24, in serialize_subjects_to_skos
+    graph.serialize(destination=path, format='turtle')
+  File "/usr/local/lib/python3.7/site-packages/rdflib/graph.py", line 982, in serialize
+    shutil.move(name, path)
+  File "/usr/local/lib/python3.7/shutil.py", line 580, in move
+    copy_function(src, real_dst)
+  File "/usr/local/lib/python3.7/shutil.py", line 267, in copy2
+    copystat(src, dst, follow_symlinks=follow_symlinks)
+  File "/usr/local/lib/python3.7/shutil.py", line 206, in copystat
+    follow_symlinks=follow)
+PermissionError: [Errno 1] Operation not permitted
+LinSearch classification loaded
