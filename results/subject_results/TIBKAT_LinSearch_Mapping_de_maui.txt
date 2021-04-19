@@ -1,0 +1,30 @@
+URI	Label	Support	True_positives	False_positives	False_negatives	Precision	Recall	F1_score
+http://uricorn.fly/linsearch#tec	Technik allgemein	5003	39	5	4964	0.8863636363636364	0.00779532280631621	0.015454725579552209
+http://uricorn.fly/linsearch#fer	Werkstoffkunde	2958	18	15	2940	0.5454545454545454	0.006085192697768763	0.012036108324974926
+http://uricorn.fly/linsearch#mas	Maschinenbau, Energietechnik	7406	0	0	7406	0.0	0.0	0.0
+http://uricorn.fly/linsearch#elt	Elektrotechnik	3916	0	0	3916	0.0	0.0	0.0
+http://uricorn.fly/linsearch#ver	Verkehrstechnik, Verkehrswesen	4134	0	0	4134	0.0	0.0	0.0
+http://uricorn.fly/linsearch#bau	Bauwesen	5035	0	0	5035	0.0	0.0	0.0
+http://uricorn.fly/linsearch#ber	Bergbau	544	7	16	537	0.30434782608695654	0.012867647058823529	0.024691358024691353
+http://uricorn.fly/linsearch#cet	Chemische und Umwelttechnik	8157	0	0	8157	0.0	0.0	0.0
+http://uricorn.fly/linsearch#med	Medizintechnik	744	36	3	708	0.9230769230769231	0.04838709677419355	0.09195402298850575
+http://uricorn.fly/linsearch#meda	Medizin	4095	0	0	4095	0.0	0.0	0.0
+http://uricorn.fly/linsearch#arc	Architektur	6982	1635	495	5347	0.7676056338028169	0.23417358922944714	0.35886742756804213
+http://uricorn.fly/linsearch#che	Chemie	4576	10	6	4566	0.625	0.0021853146853146855	0.004355400696864112
+http://uricorn.fly/linsearch#inf	Informatik	5372	0	0	5372	0.0	0.0	0.0
+http://uricorn.fly/linsearch#mat	Mathematik	4477	0	0	4477	0.0	0.0	0.0
+http://uricorn.fly/linsearch#phy	Physik	5839	3	1	5836	0.75	0.0005137866072957698	0.0010268697586856067
+http://uricorn.fly/linsearch#bio	Biowissenschaften, Biologie	4002	0	0	4002	0.0	0.0	0.0
+http://uricorn.fly/linsearch#pae	Erziehungswissenschaften, Fachdidaktiken	13998	0	0	13998	0.0	0.0	0.0
+http://uricorn.fly/linsearch#hor	Gartenbau	3408	0	1	3408	0.0	0.0	0.0
+http://uricorn.fly/linsearch#geo	Geowissenschaften, Geographie	4733	0	0	4733	0.0	0.0	0.0
+http://uricorn.fly/linsearch#his	Geschichte	8379	0	0	8379	0.0	0.0	0.0
+http://uricorn.fly/linsearch#lin	Sprachwissenschaften	3378	267	16	3111	0.9434628975265018	0.07904085257548846	0.14586178639715924
+http://uricorn.fly/linsearch#lit	Literaturwissenschaften	7137	29	4	7108	0.8787878787878788	0.004063331932184391	0.00808926080892608
+http://uricorn.fly/linsearch#phi	Philosophie	2954	212	306	2742	0.4092664092664093	0.07176709546377792	0.12211981566820276
+http://uricorn.fly/linsearch#jur	Rechtswissenschaften	11131	0	0	11131	0.0	0.0	0.0
+http://uricorn.fly/linsearch#rel	Religionswissenschaft, Theologie	3471	0	0	3471	0.0	0.0	0.0
+http://uricorn.fly/linsearch#sow	Sozialwissenschaften	16320	0	0	16320	0.0	0.0	0.0
+http://uricorn.fly/linsearch#spo	Sportwissenschaft	1144	0	0	1144	0.0	0.0	0.0
+http://uricorn.fly/linsearch#oek	Wirtschaftswissenschaften	13239	0	0	13239	0.0	0.0	0.0
+http://uricorn.fly/linsearch#rest	Konnte nicht zugeordnet werden	9151	0	1	9151	0.0	0.0	0.0
