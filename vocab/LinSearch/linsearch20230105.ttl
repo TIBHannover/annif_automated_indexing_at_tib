@@ -11,7 +11,7 @@
 
 <https://purl.org/linsearch/> rdf:type owl:Ontology ;
                                owl:versionIRI <https://purl.org/linsearch20230105/> ;
-                               owl:imports <http://www.w3.org/2004/02/skos/core> ;
+                               owl:imports <http://www.w3.org/2004/02/skos/core> , <http://purl.obolibrary.org/obo/IAO_0100001> ;
                                dct:creator "Technische Informationsbibliothek (TIB) Hannover"@de ;
                                dct:description "Fächer für die LinSearch-Fachzuordnung"@de ,
                                                "Subjects for Subject Classification with LinSearch"@en ;
@@ -29,7 +29,7 @@
 <http://uricorn.fly/linsearch#arc> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/arc"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:arc ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:arc ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -37,7 +37,7 @@
 <http://uricorn.fly/linsearch#bau> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/bau"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:bau ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:bau ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -45,7 +45,7 @@
 <http://uricorn.fly/linsearch#ber> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/ber"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:ber ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:ber ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -53,7 +53,7 @@
 <http://uricorn.fly/linsearch#bio> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/bio"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:bio ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:bio ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -61,7 +61,7 @@
 <http://uricorn.fly/linsearch#cet> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/cet"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:cet ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:cet ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -69,7 +69,7 @@
 <http://uricorn.fly/linsearch#che> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/che"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:che ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:che ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -77,7 +77,7 @@
 <http://uricorn.fly/linsearch#elt> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/elt"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:elt ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:elt ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -85,7 +85,7 @@
 <http://uricorn.fly/linsearch#fer> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/fer"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:fer ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:fer ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -93,7 +93,7 @@
 <http://uricorn.fly/linsearch#geo> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/rest"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:rest ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:rest ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -101,7 +101,7 @@
 <http://uricorn.fly/linsearch#his> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/his"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:his ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:his ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -109,7 +109,7 @@
 <http://uricorn.fly/linsearch#hor> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/hor"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:hor ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:hor ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -117,7 +117,7 @@
 <http://uricorn.fly/linsearch#inf> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/inf"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:inf ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:inf ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -125,7 +125,7 @@
 <http://uricorn.fly/linsearch#jur> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/jur"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:jur ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:jur ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -133,7 +133,7 @@
 <http://uricorn.fly/linsearch#lin> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/lin"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:lin ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:lin ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -141,7 +141,7 @@
 <http://uricorn.fly/linsearch#lit> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/lit"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:lit ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:lit ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -149,7 +149,7 @@
 <http://uricorn.fly/linsearch#mas> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/mas"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:mas ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:mas ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -157,7 +157,7 @@
 <http://uricorn.fly/linsearch#mat> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/mat"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:mat ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:mat ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -165,7 +165,7 @@
 <http://uricorn.fly/linsearch#med> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/med"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:med ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:med ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -173,7 +173,7 @@
 <http://uricorn.fly/linsearch#meda> rdf:type owl:NamedIndividual ,
                                              skos:Concept ;
                                     rdfs:comment "New identifier available: https://purl.org/linsearch/meda"^^xsd:string ;
-                                    rdfs:seeAlso linsearch:meda ;
+                                    <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:meda ;
                                     owl:deprecated "true"^^xsd:boolean .
 
 
@@ -181,7 +181,7 @@
 <http://uricorn.fly/linsearch#oek> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/oek"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:oek ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:oek ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -189,7 +189,7 @@
 <http://uricorn.fly/linsearch#pae> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/pae"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:pae ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:pae ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -197,7 +197,7 @@
 <http://uricorn.fly/linsearch#phi> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/phi"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:phi ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:phi ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -205,7 +205,7 @@
 <http://uricorn.fly/linsearch#phy> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/phy"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:phy ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:phy ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -213,7 +213,7 @@
 <http://uricorn.fly/linsearch#rel> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/rel"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:rel ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:rel ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -221,7 +221,7 @@
 <http://uricorn.fly/linsearch#rest> rdf:type owl:NamedIndividual ,
                                              skos:Concept ;
                                     rdfs:comment "New identifier available: https://purl.org/linsearch/rest"^^xsd:string ;
-                                    rdfs:seeAlso linsearch:rest ;
+                                    <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:rest ;
                                     owl:deprecated "true"^^xsd:boolean .
 
 
@@ -229,7 +229,7 @@
 <http://uricorn.fly/linsearch#sow> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/sow"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:sow ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:sow ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -237,7 +237,7 @@
 <http://uricorn.fly/linsearch#spo> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/spo"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:spo ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:spo ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -245,7 +245,7 @@
 <http://uricorn.fly/linsearch#tec> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/tec"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:tec ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:tec ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
@@ -253,7 +253,7 @@
 <http://uricorn.fly/linsearch#ver> rdf:type owl:NamedIndividual ,
                                             skos:Concept ;
                                    rdfs:comment "New identifier available: https://purl.org/linsearch/ver"^^xsd:string ;
-                                   rdfs:seeAlso linsearch:ver ;
+                                   <http://purl.obolibrary.org/obo/IAO_0100001> linsearch:ver ;
                                    owl:deprecated "true"^^xsd:boolean .
 
 
